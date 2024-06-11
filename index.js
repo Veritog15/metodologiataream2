@@ -27,9 +27,11 @@ alert("La suma de los elementos del array es: " + resultado);
 
 //Función donde se muestra el array multiplicado por 3
 function MultiplicadosPorTres(arrayNumeros) {
-    arrayNumeros.forEach(numero => {
-        alert(numero * 3);
-    });
+    let i = 0;
+    while (i < arrayNumeros.length) {
+        alert(arrayNumeros[i] * 3);
+        i++;
+    }
 }
 
 const arrayNumeros = [2, 4, 6, 8];
